@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "007ac96a-9758-4e1b-afd1-43012b39d698",
+		"name": "VCCNOW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "branches",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmNoaXQuYWdhcndhbEB4ZWJpYS5jb20iLCJleHAiOjE2MDY5ODk4ODksImlhdCI6MTYwNjkwMzQ4OX0.WM9DydScEl_k19de1aP58FB06ilLhr4pVS6ig_lWp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/branches",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"branches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vaccines",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmNoaXQuYWdhcndhbEB4ZWJpYS5jb20iLCJleHAiOjE2MDY5ODk4ODksImlhdCI6MTYwNjkwMzQ4OX0.WM9DydScEl_k19de1aP58FB06ilLhr4pVS6ig_lWp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vaccines/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccines",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "availableTime",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmNoaXQuYWdhcndhbEB4ZWJpYS5jb20iLCJleHAiOjE2MDY5ODk4ODksImlhdCI6MTYwNjkwMzQ4OX0.WM9DydScEl_k19de1aP58FB06ilLhr4pVS6ig_lWp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/availableTime/1?slotDate=2020-12-13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"availableTime",
+						"1"
+					],
+					"query": [
+						{
+							"key": "slotDate",
+							"value": "2020-12-13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vaccinationPerDayOrPeriod",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmNoaXQuYWdhcndhbEB4ZWJpYS5jb20iLCJleHAiOjE2MDY5ODk4ODksImlhdCI6MTYwNjkwMzQ4OX0.WM9DydScEl_k19de1aP58FB06ilLhr4pVS6ig_lWp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vaccinationPerDayOrPeriod?startDate=2020-12-13&endDate=2020-12-13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccinationPerDayOrPeriod"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2020-12-13"
+						},
+						{
+							"key": "endDate",
+							"value": "2020-12-13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "confirmedVaccination",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmNoaXQuYWdhcndhbEB4ZWJpYS5jb20iLCJleHAiOjE2MDY5ODk4ODksImlhdCI6MTYwNjkwMzQ4OX0.WM9DydScEl_k19de1aP58FB06ilLhr4pVS6ig_lWp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/confirmedVaccination?startDate=2020-12-13&endDate=2020-12-13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"confirmedVaccination"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2020-12-13"
+						},
+						{
+							"key": "endDate",
+							"value": "2020-12-13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scheduleSlot",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmNoaXQuYWdhcndhbEB4ZWJpYS5jb20iLCJleHAiOjE2MDY5ODk4ODksImlhdCI6MTYwNjkwMzQ4OX0.WM9DydScEl_k19de1aP58FB06ilLhr4pVS6ig_lWp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"userId\" : 6,\r\n\t\"slotTime\" : \"10:15-10:30\",\r\n\t\"branchId\": 1,\r\n\t \"slotDate\": \"2020-12-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/scheduleSlot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"scheduleSlot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scheduleSlot Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmNoaXQuYWdhcndhbEB4ZWJpYS5jb20iLCJleHAiOjE2MDY5ODk4ODksImlhdCI6MTYwNjkwMzQ4OX0.WM9DydScEl_k19de1aP58FB06ilLhr4pVS6ig_lWp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/paymentType?id=4&paymentMode=CREDIT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"paymentType"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						},
+						{
+							"key": "paymentMode",
+							"value": "CREDIT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "emailConfirm",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhcmNoaXQuYWdhcndhbEB4ZWJpYS5jb20iLCJleHAiOjE2MDY5ODk4ODksImlhdCI6MTYwNjkwMzQ4OX0.WM9DydScEl_k19de1aP58FB06ilLhr4pVS6ig_lWp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/emailConfirm?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"emailConfirm"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
